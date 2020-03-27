@@ -109,7 +109,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Determine how much to scale down the image
         int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
-        Toast.makeText(this, "" + scaleFactor, Toast.LENGTH_LONG).show();
         // Decode the image file into a Bitmap sized to fill the View
         bmOptions.inJustDecodeBounds = false;
         bmOptions.inSampleSize = scaleFactor;
